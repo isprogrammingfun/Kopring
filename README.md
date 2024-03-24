@@ -14,13 +14,13 @@ DDD 구조를 따라 아래와 같이 구성할 예정입니다.
     │   └── application-service
     ├── domain/
     │   ├── domain-service
-    │   ├── query (domain-repository interface)
+    │   ├── domain-repository interface
     │   └── model
     └── infrastructure/
         ├── entity
         ├── repository (jpa)
         ├── mapper
-        └── query.impl (domain-repository implementation)
+        └── domain-repository implementation
 ```
 
 presentation~domain 계층은 Kotlin, infrastructure 계층은 Java를 사용할 예정입니다.
